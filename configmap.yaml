@@ -15,7 +15,7 @@ data:
         HTTP_Server   On
         HTTP_Listen   0.0.0.0
         HTTP_Port     2020
-        # Logging 파이프라인		
+        # Logging 파이프라인
     @INCLUDE input-kubernetes.conf
     @INCLUDE filter-kubernetes.conf
     @INCLUDE output-elasticsearch.conf
@@ -90,5 +90,6 @@ data:
     [PARSER]
         Name springboot
         Format regex
-        Regex       /^(?<date>[0-9]+-[0-9]+-[0-9]+\s+[0-9]+:[0-9]+:[0-9]+.[0-9]+)\s+(?<log_level>[Aa]lert|ALERT|[Tt]rac>        Time_Key    time
+        Regex       /^(?<date>[0-9]+-[0-9]+-[0-9]+\s+[0-9]+:[0-9]+:[0-9]+.[0-9]+)\s+(?<log_level>[Aa]lert|ALERT|[Tt]rac>        
+        Time_Key    time
         Time_Format %Y-%m-%
