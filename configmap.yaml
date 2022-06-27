@@ -31,7 +31,7 @@ data:
     [INPUT]
         Name              tail
         Tag               shop.*
-        Path              /var/log/containers/*_shop_*.log
+        Path              /var/log/containers/*_default_*.log
         Multiline         on
         Read_from_head    true
         Parser_Firstline  multiline_pattern
